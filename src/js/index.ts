@@ -4,17 +4,17 @@ new Vue({
     // which is included at the bottom of the html file.
     el: "#app",
     data: {
-        name: "",
-        greeting: ""
+        tekst: "",
+        collection: ""
     },
     methods: {
-        sayHello() {
-            console.log("Say Hello " + this.name)
-            if (this.name == "") {
-                this.greeting = "Hello NoName"
+        Tekst() {
+            console.log("Do it " + this.tekst)
+            if(this.tekst == "") {
+                this.collection = "No Tekst"
             }
-            else {
-                this.greeting = "Hello " + this.name
+            else{
+                this.ccollection = this.tekst
             }
         }
     }
