@@ -5,16 +5,26 @@ new Vue({
     el: "#app",
     data: {
         tekst: "",
-        collection: ""
+        result: "",
+        cases: "toUpperCase"
     },
     methods: {
         Tekst() {
-            console.log("Do it " + this.tekst)
-            if(this.tekst == "") {
-                this.collection = "No Tekst"
+            console.log("Tekst" + this.tekst)
+            this.result = this.tekst.toString()
+            if (this.tekst == "") {
+                this.result = "No Tekst"
             }
-            else{
-                this.ccollection = this.tekst
+            else {
+                console.log(this.cases)
+                switch (this.cases) {
+                    case "toUpperCase": console.log("toUpperCase")
+                        this.result = this.tekst.toUpperCase()
+                        break
+                    case "toLowerCase": console.log("toLowerCase")
+                        this.result = this.tekst.toLowerCase()
+                        break
+                }
             }
         }
     }
