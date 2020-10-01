@@ -10,7 +10,7 @@ new Vue({
     },
     methods: {
         Tekst() {
-            console.log("Tekst" + this.tekst)
+            console.log("Tekst: " + this.tekst)
             this.result = this.tekst.toString()
             if (this.tekst == "") {
                 this.result = "No Tekst"
